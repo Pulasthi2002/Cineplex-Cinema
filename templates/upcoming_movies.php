@@ -156,7 +156,7 @@
               <p class="card-text">Eddie Brock and Venom must make a devastating decision as they're pursued by a mysterious military man.</p>
             </div>
             <div class="card-footer">
-              <span class="release-date">Release Date: Oct 24, 2024</span>
+              <span class="release-date">Release Date: Oct 24, 2025</span>
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@
               <p class="card-text">A heartfelt drama with gripping performances and an emotional storyline.</p>
             </div>
             <div class="card-footer">
-              <span class="release-date">Release Date: Feb 14, 2025</span>
+              <span class="release-date">Release Date: Dec 14, 2025</span>
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@
               <p class="card-text">After receiving an unexpected call from her wayfinding ancestors, Moana journeys to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she has ever faced.</p>
             </div>
             <div class="card-footer">
-              <span class="release-date">Release Date: Nov 27, 2024</span>
+              <span class="release-date">Release Date: Nov 27, 2025</span>
             </div>
           </div>
         </div>
