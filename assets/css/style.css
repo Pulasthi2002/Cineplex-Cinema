@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+/* Custom Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(30,30,30,1) 100%);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.navbar:hover {
+    background: linear-gradient(90deg, rgba(30,30,30,1) 0%, rgba(40,40,40,1) 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* White color for links */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px; /* Padding for better touch targets */
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+}
+
+.navbar .nav-link i {
+    margin-right: 5px; /* Spacing between icon and text */
+    font-size: 1.2rem; /* Icon size */
+    transition: transform 0.3s; /* Icon transition */
+}
+
+.navbar .nav-link:hover i {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+.navbar .nav-link:hover {
+    color: #e50914; /* Red color on hover */
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Adjusting the toggle button */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #e50914; /* Change toggle icon color */
+    border-radius: 5px; /* Rounded toggle icon */
+}
+
+/* Logo Animation */
+.animated-logo {
+    animation: spin 1.5s infinite linear; /* Spin animation */
+    transition: transform 0.5s;
+}
+
+.animated-logo:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+/* Global Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('../images/hero-bg.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+/* Add dynamic, fluid movement to the background */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    transform: scale(0.5);
+    animation: heroPulse 8s infinite ease-in-out;
+    z-index: 1;
+}
+
+/* Subtle background pulse animation */
+@keyframes heroPulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.hero-section .content {
+    z-index: 2;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Main Heading Styling */
+.hero-section h1 {
+    font-family: 'Poppins', cursive;
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+    color: #f7c46b;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s ease, transform 0.6s ease;
+    animation: slideIn 2s ease-out forwards;
+}
+
+/* Add subtle slide in effect to the heading */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Add hover effect for an interactive heading */
+.hero-section h1:hover {
+    color: #ffcc80;
+    transform: scale(1.05);
+}
+
+/* Lead Description */
+.hero-section p {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: fadeInText 2.5s ease forwards;
+}
+
+/* Fade in for the paragraph */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Button Styling */
+.hero-section .btn {
+    padding: 12px 30px;
+    border: 2px solid #f7c46b;
+    color: #fff;
+    background: linear-gradient(135deg, #f7c46b, #d38f31);
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect to make it more dynamic */
+.hero-section .btn:hover {
+    background: linear-gradient(135deg, #ffdd99, #f7c46b);
+    color: #333;
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation for FadeIn Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General Animation for Sections */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Add subtle hover scaling effect to all buttons */
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.3rem;
+    }
+
+    .hero-section .btn {
+        padding: 10px 25px;
+    }
+}
+
+
+body {
+    background-color: #0e0e0e;
+    color: #ddd;
+    font-family: 'Merriweather', serif;
+}
+
+
+.btn-primary {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffdd57;
+    color: #333;
+}
+
+/* AOS Animations */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-image {
+        margin-bottom: 10px;
+    }
+} 
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #333;
+}
+
+
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+    --bg-color: #121212;
+    --primary-color: #1a1a1a;
+    --neon-color: #00ffcc; /* Neon cyan */
+    --text-color: #ffffff;
+    --hover-glow: rgba(0, 255, 204, 0.5);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* New Footer Styling */
+.footer {
+    background-color: #0d0d0d;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #660000 0%, #330000 100%);
+    z-index: -1;
+}
+
+.footer-heading {
+    font-size: 1.3rem;
+    color: #f0f0f0;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+}
+
+.footer-nav a {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.footer-nav a:hover {
+    color: #ff5500; /* Deep amber hover effect */
+}
+
+.footer-contact li {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 12px;
+}
+
+.footer-contact li i {
+    margin-right: 10px;
+    color: #ff5500;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.4s, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff5500;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-heading {
+        font-size: 1.1rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    
+    #home p {
+        font-size: 1.25rem;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Review Form Styling */
+.modal-content.glass-effect {
+    background: #0d0d0d;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Review Section Animations */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Enhance the overlay effect */
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease;
+}
+
+
+
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.seat.available {
+    background-color: #28a745; /* Green for available */
+}
+
+.seat.booked {
+    background-color: #dc3545; /* Red for booked */
+}
