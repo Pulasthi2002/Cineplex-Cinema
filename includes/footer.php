@@ -6,7 +6,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up">
                 <img src="assets/images/logo.png" alt="Cineplex Cinema" width="120" class="mb-3">
                 <p class="footer-description mb-4">Experience the magic of the big screen at Cineplex Cinema, where every moment turns into a cinematic masterpiece. Your ultimate movie destination.</p>
-                <p class="footer-copyright">&copy; 2024 Cineplex Cinema. All rights reserved.</p>
+                <p class="footer-copyright">&copy; 2025 Cineplex Cinema. All rights reserved.</p>
             </div>
 
             <!-- Quick Links -->
