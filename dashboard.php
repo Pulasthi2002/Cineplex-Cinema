@@ -48,7 +48,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
                 <li><a href="#" id="user-management">User Management</a></li>
                 <li><a href="#" id="movie-management">Movie Management</a></li>
                 <li><a href="#" id="booking-management">Booking Management</a></li>
-                <li><a href="#" id="feedback-management">Feedback Management</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
